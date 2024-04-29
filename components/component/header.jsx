@@ -68,7 +68,7 @@ export default function Header() {
                   className="w-8 h-8 rounded-full"
                   src={user.photoURL}
                 />
-                <span className="ml-2">{user.email}</span>
+                <span className="ml-2">{user.displayName || user.email}</span>
                 <Button
                   onClick={handleLogout}
                   className="text-white hover:bg-gray-700 hover:text-white"
