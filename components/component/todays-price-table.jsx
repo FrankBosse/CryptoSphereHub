@@ -41,7 +41,7 @@ export default function TodaysPriceTable() {
     <div className="bg-[#0d1117] text-white p-8">
       <div className="container mx-auto px-6 py-3">
         <h2 className="text-3xl font-semibold mb-6">
-          Today's Cryptocurrency Prices
+          Today&#39;s Cryptocurrency Prices
         </h2>
         <Table>
           <TableHeader>
