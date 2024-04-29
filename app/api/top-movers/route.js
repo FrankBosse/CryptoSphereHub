@@ -35,7 +35,7 @@ export async function GET() {
 
     // Fetch the bottom 5 movers
     const bottomMoversResponse = await fetch(
-      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?volume_24h_min=100000&price_min=0.1&sort=percent_change_24h&sort_dir=asc&limit=10&convert=USD`,
+      "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?volume_24h_min=100000&price_min=0.1&sort=percent_change_24h&sort_dir=asc&limit=10&convert=USD",
       {
         headers: {
           "X-CMC_PRO_API_KEY": API_KEY,

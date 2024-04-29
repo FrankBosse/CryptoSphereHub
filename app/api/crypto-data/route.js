@@ -4,7 +4,7 @@ export async function GET() {
   try {
     // Fetch data for the top 100 cryptocurrencies
     const response = await fetch(
-      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=100&convert=USD`,
+      "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=100&convert=USD",
       {
         headers: {
           "X-CMC_PRO_API_KEY": API_KEY,

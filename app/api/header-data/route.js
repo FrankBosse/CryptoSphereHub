@@ -4,7 +4,7 @@ export async function GET() {
   try {
     // Fetch the latest global market metrics
     const response = await fetch(
-      `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?convert=USD`,
+      "https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?convert=USD",
       {
         headers: {
           "X-CMC_PRO_API_KEY": API_KEY,
