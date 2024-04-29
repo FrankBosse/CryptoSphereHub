@@ -77,9 +77,11 @@ export default function TodaysPriceTable() {
                   ${coin.currentPrice.toFixed(2)}
                 </TableCell>
                 <TableCell
-                  className={`text-right ${
-                    coin.priceChange24h > 0 ? "text-green-400" : "text-red-400"
-                  }`}
+                  className={
+                    coin.priceChange24h > 0
+                      ? "text-right text-green-400"
+                      : "text-right text-red-400"
+                  }
                 >
                   {coin.priceChange24h > 0 ? "+" : ""}
                   {coin.priceChange24h.toFixed(2)}%
