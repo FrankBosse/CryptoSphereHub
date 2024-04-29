@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           "bg-gray-900 text-gray-50 hover:bg-gray-200 dark:bg-[#2b2b39] dark:text-gray-50 dark:hover:text-blue-500 dark:hover:bg-[#464664]",
         pageSelected:
-          "bg-gray-900 text-gray-50 dark:text-blue-500 dark:bg-[#464664]",
+          "text-blue-500 bg-[#464664] dark:text-blue-500 dark:bg-[#464664]",
         destructive:
           "bg-red-500 text-gray-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-gray-50 dark:hover:bg-red-900/90",
         outline:
