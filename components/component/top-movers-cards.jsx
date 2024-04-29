@@ -17,7 +17,7 @@ export default function TopMoversCards() {
       {/* Top Movers Section */}
       <div className="container mx-auto px-6 py-3">
         <h2 className="text-white text-lg font-bold mb-3">Top Movers</h2>
-        <div className="flex overflow-x-auto space-x-4">
+        <div className="flex overflow-x-auto space-x-4 hide-scrollbar">
           {topMovers &&
             topMovers.map((coin, index) => (
               <Card key={index} className="bg-[#161b22] w-[220px] p-3">
@@ -52,7 +52,7 @@ export default function TopMoversCards() {
       {/* Bottom Movers Section */}
       <div className="container mx-auto px-6 py-3">
         <h2 className="text-white text-lg font-bold mb-3">Bottom Movers</h2>
-        <div className="flex overflow-x-auto space-x-4">
+        <div className="flex overflow-x-auto space-x-4 hide-scrollbar">
           {bottomMovers &&
             bottomMovers.map((coin, index) => (
               <Card key={index} className="bg-[#161b22] w-[220px] p-3">

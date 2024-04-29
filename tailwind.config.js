@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,15 +12,19 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    // Add custom CSS classes for scrollbar
     addComponents: {
       // Hide scrollbar for Chrome, Safari, and Opera
-      ".container-snap::-webkit-scrollbar": {
+      ".hide-scrollbar::-webkit-scrollbar": {
         display: "none",
       },
-      // Hide scrollbar for IE, Edge, and Firefox
-      ".container-snap": {
-        "-ms-overflow-style": "none", // IE and Edge
-        "scrollbar-width": "none", // Firefox
+      // Hide scrollbar for Firefox
+      ".hide-scrollbar": {
+        scrollbarWidth: "none",
+      },
+      // Hide scrollbar for Internet Explorer and Edge
+      ".hide-scrollbar": {
+        msOverflowStyle: "none",
       },
     },
   },
