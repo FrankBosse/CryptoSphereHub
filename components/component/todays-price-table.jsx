@@ -93,7 +93,7 @@ export default function TodaysPriceTable() {
                   ${formatNumber(coin.marketCap)}
                 </TableCell>
                 <TableCell>
-                  <Button className="bg-blue-600">Trade</Button>
+                  <Button>Trade</Button>
                 </TableCell>
               </TableRow>
             ))}
