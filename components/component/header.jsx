@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 import { useUserAuth } from "../../app/_utils/auth-context";
 import { useAPIContext } from "../../app/_utils/API-Context";
 
-export default function header() {
+export default function Header() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
   const { globalData } = useAPIContext();
 
